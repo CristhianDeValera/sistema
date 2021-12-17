@@ -16,7 +16,7 @@ namespace Sistema.Negocio
             DUsuario Datos = new DUsuario();
             return Datos.Listar();
         }
-
+            
         public static DataTable Buscar(string Valor)
         {
             DUsuario Datos = new DUsuario();
