@@ -31,33 +31,33 @@
             this.components = new System.ComponentModel.Container();
             this.tabGeneral = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.BtnEliminar = new FontAwesome.Sharp.IconButton();
+            this.BtnDesactivar = new FontAwesome.Sharp.IconButton();
+            this.BtnActivar = new FontAwesome.Sharp.IconButton();
+            this.ChkSeleccionar = new System.Windows.Forms.CheckBox();
+            this.BtnBuscar = new FontAwesome.Sharp.IconButton();
             this.DgvListado = new System.Windows.Forms.DataGridView();
             this.Seleccionar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.TxtBuscar = new System.Windows.Forms.TextBox();
             this.LblTotal = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.TxtBuscar = new System.Windows.Forms.TextBox();
-            this.BtnBuscar = new FontAwesome.Sharp.IconButton();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.TxtId = new System.Windows.Forms.TextBox();
-            this.TxtNombre = new System.Windows.Forms.TextBox();
-            this.TxtDescripcion = new System.Windows.Forms.TextBox();
-            this.BtnInsertar = new FontAwesome.Sharp.IconButton();
-            this.BtnCancelar = new FontAwesome.Sharp.IconButton();
-            this.label3 = new System.Windows.Forms.Label();
-            this.ErrorIcono = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.BtnActualizar = new FontAwesome.Sharp.IconButton();
-            this.ChkSeleccionar = new System.Windows.Forms.CheckBox();
-            this.BtnActivar = new FontAwesome.Sharp.IconButton();
-            this.BtnDesactivar = new FontAwesome.Sharp.IconButton();
-            this.BtnEliminar = new FontAwesome.Sharp.IconButton();
+            this.TxtId = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.TxtNombre = new System.Windows.Forms.TextBox();
+            this.BtnCancelar = new FontAwesome.Sharp.IconButton();
+            this.BtnInsertar = new FontAwesome.Sharp.IconButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.TxtDescripcion = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.ErrorIcono = new System.Windows.Forms.ErrorProvider(this.components);
             this.tabGeneral.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvListado)).BeginInit();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ErrorIcono)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ErrorIcono)).BeginInit();
             this.SuspendLayout();
             // 
             // tabGeneral
@@ -89,6 +89,91 @@
             this.tabPage1.Text = "Listado";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // BtnEliminar
+            // 
+            this.BtnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.BtnEliminar.FlatAppearance.BorderSize = 0;
+            this.BtnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnEliminar.ForeColor = System.Drawing.Color.White;
+            this.BtnEliminar.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.BtnEliminar.IconColor = System.Drawing.Color.Black;
+            this.BtnEliminar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnEliminar.Location = new System.Drawing.Point(406, 384);
+            this.BtnEliminar.Name = "BtnEliminar";
+            this.BtnEliminar.Size = new System.Drawing.Size(100, 23);
+            this.BtnEliminar.TabIndex = 7;
+            this.BtnEliminar.Text = "Eliminar";
+            this.BtnEliminar.UseVisualStyleBackColor = false;
+            this.BtnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
+            // 
+            // BtnDesactivar
+            // 
+            this.BtnDesactivar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.BtnDesactivar.FlatAppearance.BorderSize = 0;
+            this.BtnDesactivar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnDesactivar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnDesactivar.ForeColor = System.Drawing.Color.White;
+            this.BtnDesactivar.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.BtnDesactivar.IconColor = System.Drawing.Color.Black;
+            this.BtnDesactivar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnDesactivar.Location = new System.Drawing.Point(276, 384);
+            this.BtnDesactivar.Name = "BtnDesactivar";
+            this.BtnDesactivar.Size = new System.Drawing.Size(100, 23);
+            this.BtnDesactivar.TabIndex = 6;
+            this.BtnDesactivar.Text = "Desactivar";
+            this.BtnDesactivar.UseVisualStyleBackColor = false;
+            this.BtnDesactivar.Click += new System.EventHandler(this.BtnDesactivar_Click);
+            // 
+            // BtnActivar
+            // 
+            this.BtnActivar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.BtnActivar.FlatAppearance.BorderSize = 0;
+            this.BtnActivar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnActivar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnActivar.ForeColor = System.Drawing.Color.White;
+            this.BtnActivar.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.BtnActivar.IconColor = System.Drawing.Color.Black;
+            this.BtnActivar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnActivar.Location = new System.Drawing.Point(146, 384);
+            this.BtnActivar.Name = "BtnActivar";
+            this.BtnActivar.Size = new System.Drawing.Size(100, 23);
+            this.BtnActivar.TabIndex = 5;
+            this.BtnActivar.Text = "Activar";
+            this.BtnActivar.UseVisualStyleBackColor = false;
+            this.BtnActivar.Click += new System.EventHandler(this.BtnActivar_Click);
+            // 
+            // ChkSeleccionar
+            // 
+            this.ChkSeleccionar.AutoSize = true;
+            this.ChkSeleccionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ChkSeleccionar.Location = new System.Drawing.Point(7, 386);
+            this.ChkSeleccionar.Name = "ChkSeleccionar";
+            this.ChkSeleccionar.Size = new System.Drawing.Size(91, 19);
+            this.ChkSeleccionar.TabIndex = 4;
+            this.ChkSeleccionar.Text = "Seleccionar";
+            this.ChkSeleccionar.UseVisualStyleBackColor = true;
+            this.ChkSeleccionar.CheckedChanged += new System.EventHandler(this.ChkSeleccionar_CheckedChanged);
+            // 
+            // BtnBuscar
+            // 
+            this.BtnBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BtnBuscar.BackColor = System.Drawing.Color.Transparent;
+            this.BtnBuscar.FlatAppearance.BorderSize = 0;
+            this.BtnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnBuscar.IconChar = FontAwesome.Sharp.IconChar.Search;
+            this.BtnBuscar.IconColor = System.Drawing.Color.DarkOrange;
+            this.BtnBuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnBuscar.IconSize = 30;
+            this.BtnBuscar.Location = new System.Drawing.Point(378, 11);
+            this.BtnBuscar.Name = "BtnBuscar";
+            this.BtnBuscar.Size = new System.Drawing.Size(27, 27);
+            this.BtnBuscar.TabIndex = 3;
+            this.BtnBuscar.UseVisualStyleBackColor = false;
+            this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
+            // 
             // DgvListado
             // 
             this.DgvListado.AllowUserToAddRows = false;
@@ -114,6 +199,15 @@
             this.Seleccionar.Name = "Seleccionar";
             this.Seleccionar.ReadOnly = true;
             // 
+            // TxtBuscar
+            // 
+            this.TxtBuscar.BackColor = System.Drawing.Color.PapayaWhip;
+            this.TxtBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBuscar.Location = new System.Drawing.Point(6, 15);
+            this.TxtBuscar.Name = "TxtBuscar";
+            this.TxtBuscar.Size = new System.Drawing.Size(366, 23);
+            this.TxtBuscar.TabIndex = 1;
+            // 
             // LblTotal
             // 
             this.LblTotal.AutoSize = true;
@@ -133,119 +227,6 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Mantenimiento";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // TxtBuscar
-            // 
-            this.TxtBuscar.BackColor = System.Drawing.Color.PapayaWhip;
-            this.TxtBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBuscar.Location = new System.Drawing.Point(6, 15);
-            this.TxtBuscar.Name = "TxtBuscar";
-            this.TxtBuscar.Size = new System.Drawing.Size(366, 23);
-            this.TxtBuscar.TabIndex = 1;
-            // 
-            // BtnBuscar
-            // 
-            this.BtnBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.BtnBuscar.BackColor = System.Drawing.Color.Transparent;
-            this.BtnBuscar.FlatAppearance.BorderSize = 0;
-            this.BtnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnBuscar.IconChar = FontAwesome.Sharp.IconChar.Search;
-            this.BtnBuscar.IconColor = System.Drawing.Color.DarkOrange;
-            this.BtnBuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BtnBuscar.IconSize = 30;
-            this.BtnBuscar.Location = new System.Drawing.Point(378, 11);
-            this.BtnBuscar.Name = "BtnBuscar";
-            this.BtnBuscar.Size = new System.Drawing.Size(27, 27);
-            this.BtnBuscar.TabIndex = 3;
-            this.BtnBuscar.UseVisualStyleBackColor = false;
-            this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(31, 67);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nombre (*):";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(25, 103);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 15);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Descripción:";
-            // 
-            // TxtId
-            // 
-            this.TxtId.Location = new System.Drawing.Point(317, 22);
-            this.TxtId.Name = "TxtId";
-            this.TxtId.Size = new System.Drawing.Size(100, 20);
-            this.TxtId.TabIndex = 2;
-            this.TxtId.Visible = false;
-            // 
-            // TxtNombre
-            // 
-            this.TxtNombre.Location = new System.Drawing.Point(119, 67);
-            this.TxtNombre.Name = "TxtNombre";
-            this.TxtNombre.Size = new System.Drawing.Size(298, 20);
-            this.TxtNombre.TabIndex = 3;
-            // 
-            // TxtDescripcion
-            // 
-            this.TxtDescripcion.Location = new System.Drawing.Point(119, 104);
-            this.TxtDescripcion.Multiline = true;
-            this.TxtDescripcion.Name = "TxtDescripcion";
-            this.TxtDescripcion.Size = new System.Drawing.Size(298, 69);
-            this.TxtDescripcion.TabIndex = 4;
-            // 
-            // BtnInsertar
-            // 
-            this.BtnInsertar.BackColor = System.Drawing.Color.Transparent;
-            this.BtnInsertar.FlatAppearance.BorderSize = 0;
-            this.BtnInsertar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnInsertar.IconChar = FontAwesome.Sharp.IconChar.Save;
-            this.BtnInsertar.IconColor = System.Drawing.Color.DarkOrange;
-            this.BtnInsertar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BtnInsertar.IconSize = 40;
-            this.BtnInsertar.Location = new System.Drawing.Point(247, 213);
-            this.BtnInsertar.Name = "BtnInsertar";
-            this.BtnInsertar.Size = new System.Drawing.Size(45, 45);
-            this.BtnInsertar.TabIndex = 5;
-            this.BtnInsertar.UseVisualStyleBackColor = false;
-            this.BtnInsertar.Click += new System.EventHandler(this.BtnInsertar_Click);
-            // 
-            // BtnCancelar
-            // 
-            this.BtnCancelar.FlatAppearance.BorderSize = 0;
-            this.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCancelar.IconChar = FontAwesome.Sharp.IconChar.Times;
-            this.BtnCancelar.IconColor = System.Drawing.Color.DarkOrange;
-            this.BtnCancelar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BtnCancelar.IconSize = 40;
-            this.BtnCancelar.Location = new System.Drawing.Point(372, 213);
-            this.BtnCancelar.Name = "BtnCancelar";
-            this.BtnCancelar.Size = new System.Drawing.Size(45, 45);
-            this.BtnCancelar.TabIndex = 6;
-            this.BtnCancelar.UseVisualStyleBackColor = true;
-            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(119, 178);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(200, 15);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "(*) Indica que el dato es obligatorio.";
-            // 
-            // ErrorIcono
-            // 
-            this.ErrorIcono.ContainerControl = this;
             // 
             // groupBox1
             // 
@@ -279,76 +260,96 @@
             this.BtnActualizar.UseVisualStyleBackColor = true;
             this.BtnActualizar.Click += new System.EventHandler(this.BtnActualizar_Click);
             // 
-            // ChkSeleccionar
+            // TxtId
             // 
-            this.ChkSeleccionar.AutoSize = true;
-            this.ChkSeleccionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ChkSeleccionar.Location = new System.Drawing.Point(7, 386);
-            this.ChkSeleccionar.Name = "ChkSeleccionar";
-            this.ChkSeleccionar.Size = new System.Drawing.Size(91, 19);
-            this.ChkSeleccionar.TabIndex = 4;
-            this.ChkSeleccionar.Text = "Seleccionar";
-            this.ChkSeleccionar.UseVisualStyleBackColor = true;
-            this.ChkSeleccionar.CheckedChanged += new System.EventHandler(this.ChkSeleccionar_CheckedChanged);
+            this.TxtId.Location = new System.Drawing.Point(317, 22);
+            this.TxtId.Name = "TxtId";
+            this.TxtId.Size = new System.Drawing.Size(100, 20);
+            this.TxtId.TabIndex = 2;
+            this.TxtId.Visible = false;
             // 
-            // BtnActivar
+            // label3
             // 
-            this.BtnActivar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.BtnActivar.FlatAppearance.BorderSize = 0;
-            this.BtnActivar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnActivar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnActivar.ForeColor = System.Drawing.Color.White;
-            this.BtnActivar.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.BtnActivar.IconColor = System.Drawing.Color.Black;
-            this.BtnActivar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BtnActivar.Location = new System.Drawing.Point(146, 384);
-            this.BtnActivar.Name = "BtnActivar";
-            this.BtnActivar.Size = new System.Drawing.Size(100, 23);
-            this.BtnActivar.TabIndex = 5;
-            this.BtnActivar.Text = "Activar";
-            this.BtnActivar.UseVisualStyleBackColor = false;
-            this.BtnActivar.Click += new System.EventHandler(this.BtnActivar_Click);
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(119, 178);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(200, 15);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "(*) Indica que el dato es obligatorio.";
             // 
-            // BtnDesactivar
+            // TxtNombre
             // 
-            this.BtnDesactivar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.BtnDesactivar.FlatAppearance.BorderSize = 0;
-            this.BtnDesactivar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnDesactivar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnDesactivar.ForeColor = System.Drawing.Color.White;
-            this.BtnDesactivar.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.BtnDesactivar.IconColor = System.Drawing.Color.Black;
-            this.BtnDesactivar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BtnDesactivar.Location = new System.Drawing.Point(276, 384);
-            this.BtnDesactivar.Name = "BtnDesactivar";
-            this.BtnDesactivar.Size = new System.Drawing.Size(100, 23);
-            this.BtnDesactivar.TabIndex = 6;
-            this.BtnDesactivar.Text = "Desactivar";
-            this.BtnDesactivar.UseVisualStyleBackColor = false;
-            this.BtnDesactivar.Click += new System.EventHandler(this.BtnDesactivar_Click);
+            this.TxtNombre.Location = new System.Drawing.Point(119, 67);
+            this.TxtNombre.Name = "TxtNombre";
+            this.TxtNombre.Size = new System.Drawing.Size(298, 20);
+            this.TxtNombre.TabIndex = 3;
             // 
-            // BtnEliminar
+            // BtnCancelar
             // 
-            this.BtnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.BtnEliminar.FlatAppearance.BorderSize = 0;
-            this.BtnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnEliminar.ForeColor = System.Drawing.Color.White;
-            this.BtnEliminar.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.BtnEliminar.IconColor = System.Drawing.Color.Black;
-            this.BtnEliminar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BtnEliminar.Location = new System.Drawing.Point(406, 384);
-            this.BtnEliminar.Name = "BtnEliminar";
-            this.BtnEliminar.Size = new System.Drawing.Size(100, 23);
-            this.BtnEliminar.TabIndex = 7;
-            this.BtnEliminar.Text = "Eliminar";
-            this.BtnEliminar.UseVisualStyleBackColor = false;
-            this.BtnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
+            this.BtnCancelar.FlatAppearance.BorderSize = 0;
+            this.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCancelar.IconChar = FontAwesome.Sharp.IconChar.Times;
+            this.BtnCancelar.IconColor = System.Drawing.Color.DarkOrange;
+            this.BtnCancelar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnCancelar.IconSize = 40;
+            this.BtnCancelar.Location = new System.Drawing.Point(372, 213);
+            this.BtnCancelar.Name = "BtnCancelar";
+            this.BtnCancelar.Size = new System.Drawing.Size(45, 45);
+            this.BtnCancelar.TabIndex = 6;
+            this.BtnCancelar.UseVisualStyleBackColor = true;
+            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
+            // 
+            // BtnInsertar
+            // 
+            this.BtnInsertar.BackColor = System.Drawing.Color.Transparent;
+            this.BtnInsertar.FlatAppearance.BorderSize = 0;
+            this.BtnInsertar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnInsertar.IconChar = FontAwesome.Sharp.IconChar.Save;
+            this.BtnInsertar.IconColor = System.Drawing.Color.DarkOrange;
+            this.BtnInsertar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnInsertar.IconSize = 40;
+            this.BtnInsertar.Location = new System.Drawing.Point(247, 213);
+            this.BtnInsertar.Name = "BtnInsertar";
+            this.BtnInsertar.Size = new System.Drawing.Size(45, 45);
+            this.BtnInsertar.TabIndex = 5;
+            this.BtnInsertar.UseVisualStyleBackColor = false;
+            this.BtnInsertar.Click += new System.EventHandler(this.BtnInsertar_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(31, 67);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 15);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Nombre (*):";
+            // 
+            // TxtDescripcion
+            // 
+            this.TxtDescripcion.Location = new System.Drawing.Point(119, 104);
+            this.TxtDescripcion.Multiline = true;
+            this.TxtDescripcion.Name = "TxtDescripcion";
+            this.TxtDescripcion.Size = new System.Drawing.Size(298, 69);
+            this.TxtDescripcion.TabIndex = 4;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(25, 103);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(75, 15);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Descripción:";
+            // 
+            // ErrorIcono
+            // 
+            this.ErrorIcono.ContainerControl = this;
             // 
             // frmCategoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BorderStyle = MetroFramework.Drawing.MetroBorderStyle.FixedSingle;
             this.ClientSize = new System.Drawing.Size(679, 519);
             this.Controls.Add(this.tabGeneral);
             this.Name = "frmCategoria";
@@ -361,9 +362,9 @@
             this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvListado)).EndInit();
             this.tabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ErrorIcono)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ErrorIcono)).EndInit();
             this.ResumeLayout(false);
 
         }
