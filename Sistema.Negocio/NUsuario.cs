@@ -64,7 +64,6 @@ namespace Sistema.Negocio
             {
                 obj.IdUsuario = Id;
                 obj.IdRol = IdRol;
-                obj.IdRol = IdRol;
                 obj.Nombre = Nombre;
                 obj.TipoDocumento = TipoDocumento;
                 obj.NumDocumento = NumDocumento;
@@ -84,7 +83,6 @@ namespace Sistema.Negocio
                 else
                 {
                     obj.IdUsuario = Id;
-                    obj.IdRol = IdRol;
                     obj.IdRol = IdRol;
                     obj.Nombre = Nombre;
                     obj.TipoDocumento = TipoDocumento;
